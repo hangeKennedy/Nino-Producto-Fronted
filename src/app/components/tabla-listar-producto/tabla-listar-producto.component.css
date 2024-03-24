@@ -1,0 +1,51 @@
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #8eb9f0;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #8eb9f0;
+    background-color: #8eb9f0;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #8eb9f0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+
+/*Boton*/
+.my-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .my-button:hover {
+    background-color: #45a049;
+  }
+  
+  .my-button:active {
+    background-color: #3e8e41;
+  }

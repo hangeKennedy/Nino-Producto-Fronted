@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="form-container">
+        <h2 class="form-title">Post New Customer</h2>
+        <form [formGroup]="form">
+            <div class="form-group">
+                <label for="codigo">Codigo:</label>
+                <input type="text" id="codigo" name="codigo" required formControlName="codigo">
+            </div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required formControlName="nombre">
+            </div>
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required formControlName="marca">
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" required formControlName="descripcion">
+            </div>
+            <div>
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required formControlName="precio">
+            </div>
+            <div>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required formControlName="cantidad">
+            </div>
+
+            <button type="submit" (click)="postProducto()" >Registrar</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<button class="my-button" routerLink="/producto">Ingresar producto</button>
+<div class="table_component" role="region" tabindex="0">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Marca</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let producto of productos">
+                <td>{{producto.id}}</td>
+                <td>{{producto.codigo}}</td>
+                <td>{{producto.nombre}}</td>
+                <td>{{producto.marca}}</td>
+                <td>{{producto.descripcion}}</td>
+                <td>{{producto.precio}}</td>
+                <td>{{producto.cantidad}}</td>
+                <td>
+                    <button class="my-button" (click)="deleteProducto(producto.id)">Eliminar</button>
+                    <button class="my-button" routerLink="/producto/{{producto.id}}">Editar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
